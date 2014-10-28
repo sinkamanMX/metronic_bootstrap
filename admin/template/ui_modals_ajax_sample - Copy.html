@@ -1,0 +1,73 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+	<h4 class="modal-title">Scrollspy On Modal</h4>
+</div>
+<div class="modal-body" id="scrollspy-modal">
+	<div class="row">
+		<div class="col-md-12">		
+
+				<div id="scrollspy-navbar" class="navbar navbar-default navbar-static" role="navigation">
+								<div class="navbar-header">
+									<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+									<span class="sr-only">
+										 Toggle navigation
+									</span>
+									<span class="fa fa-bar">
+									</span>
+									<span class="fa fa-bar">
+									</span>
+									<span class="fa fa-bar">
+									</span>
+									</button>
+									<a class="navbar-brand" href="#">
+										 Section Name
+									</a>
+								</div>
+								<div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+									<ul class="nav navbar-nav">
+										<li class="active">
+											<a href="#home">
+												 Home
+											</a>
+										</li>
+										<li class="">
+											<a href="#profile">
+												 Profile
+											</a>
+										</li>
+										<li class="">
+											<a href="#settings">
+												 Settings
+											</a>
+										</li>
+									</ul>
+								</div>
+				</div>
+				<div id="scrollspy-content" data-target="#scrollspy-navbar" data-offset="0" class="scrollspy-example">
+								<h4 id="home">Home</h4>
+								<p>
+									 Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat. Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck,
+								</p>
+								<h4 id="profile">Profile</h4>
+								<p>
+									 Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt. Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck,
+								</p>
+								<h4 id="settings">Profile</h4>
+								<p>
+									 Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt. Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck,
+								</p>
+				</div>
+
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn default" data-dismiss="modal">Close</button>
+	<button type="button" class="btn blue">Save changes</button>
+</div>
+
+<script>
+jQuery(document).ready(function() {  
+  $('#scrollspy-content').scrollspy($('#scrollspy-content').data());
+});
+</script>

@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Documentation - Website Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />    
+    <link href="assets/google-code-prettify/prettify.css" rel="stylesheet" />
+    <link href="assets/css/docs.css" rel="stylesheet" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png" />
+	<style>
+		.pluginwrap { display:none; } 
+		.pluginwrapActive { display:block; }
+	</style>
+  </head>
+  <body>
+    <!-- Subhead
+    ================================================== -->
+    <header class="jumbotron subhead">
+      <div class="container container-narrow">
+        <h1>Metronic - Website Template</h1>
+        <p class="lead">Documentation v2.0.2</p>
+      </div>
+    </header>
+      
+    <div class="container">
+
+      <div class="row">
+        <div class="span12">
+            <div class="well intro-text">
+                  <h3>Thank You For Purchasing Metronic, One of Our Premium Items!</h3>
+                  <p>
+                    If you have any questions that are beyond the scope of this help file, please email our support 
+                    <a href="mailto:support@keenthemes.com">support@keenthemes.com</a>.
+                  </p>
+            </div>  
+        </div> 
+      </div> 
+
+      <div class="row" style="margin-top:20px;margin-bottom:20px">
+          <div class="span12">
+              <table class="table table-bordered table-striped">
+               <tbody>
+                  <tr>
+                    <td width="50%">
+                      <ul class="menu">
+                        <h4>Overview</h4>
+                        <p>
+                          <b>Metronic</b> is a responsive Admin & Frontend theme powered with <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap 3.1.1 Framework</a> for admin and backend applications.  Metronic Frontend has a clean and intuitive minimalistic design which makes your next project look awesome and yet user friendly.  Metronic comes with a huge collection of plugins and UI components and it works in all major web browsers, tablets and phones.
+                        </p>  
+                        <hr>
+                        <p>
+                          Author: <a href="http://www.keenthemes.com" target="_blank">KeenThemes</a><br>
+                          Contact: <a href="mailto:support@keenthemes.com">support@keenthemes.com</a><br>
+                          Created On: 05/08/2013<br>
+                          Updated On: 20/2/2014<br>
+                        </p>
+                         <hr> 
+                        <a class="btn btn-success" target="_blank" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469">
+                          Live Preview 
+                        </a>
+                         <a class="btn btn-success" target="_blank" href="http://themeforest.net/user/keenthemes/portfolio">
+                          Other Themes <i class="icon-share-alt icon-white"></i>
+                        </a>
+                      </ul>
+                    </td>
+                    <td width="50%">
+                      <h4>Table of Contents:</h4>
+                      <ul class="menu">
+                        <li><a href="javascript:;" class="clickable" data-section="#overview">1. Overview</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#template_structure">2. Template Structure</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#font">3. Font</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#theme_config">4. Theme & Layout Configuration</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#top_menu">5. Header with Top Bar</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#main_menu">6. Main Menu</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#buttons">7. Buttons</a></li>                        
+                        <li><a href="javascript:;" class="clickable" data-section="#init">8. Javascript Initialization</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#extend">9. Coding & Extending</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#plugins">10. Javascript Plugins & Resources</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#references">11. References</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#log">12. Change Log</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#upgrade">13. Upgrade</a></li>
+                        <li><a href="javascript:;" class="clickable" data-section="#end">14. End of Documentation</a></li>
+                      </ul>
+                    </td>  
+                  </tr>
+                </tbody>
+              </table>
+          </div> 
+      </div> 
+
+       <div class="row">
+        <div class="span12">
+          <section id="template_structure">
+            <div class="page-header">
+              <h1>2. Template Structure</h1>
+               <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+            </div>
+            <p>
+               All template files have fixed structure consisting of <code>header</code>, <code>slider-main</code>, <code>container</code> and <code>footer</code> as shown below:
+            </p>
+            <img src="assets/i/layout.jpg">
+            <h3>
+            Beginning of Page  
+            </h3>
+            <p>
+              Below code is used at the beginning of all HTML pages to detect Internet Explorer browser version 
+              and set a spesific class applied to Internet Explorer versions.
+            </p>
+            <pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt; &lt;html lang=&quot;en&quot; class=&quot;ie8&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 9]&gt; &lt;html lang=&quot;en&quot; class=&quot;ie9&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if !IE]&gt;&lt;!--&gt; &lt;html lang=&quot;en&quot;&gt; &lt;!--&lt;![endif]--&gt;
+</pre>  
+
+<h3>Page Head</h3>
+<p>
+Page head contains metadata, javascript and css files:
+</p>
+<pre class="prettyprint linenums">
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Metronic Frotnend | Homepage&lt;/title&gt;
+    &lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;description&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;author&quot; /&gt;
+
+   &lt;!-- BEGIN GLOBAL MANDATORY STYLES --&gt;          
+   &lt;link href=&quot;assets/plugins/font-awesome/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;link href=&quot;assets/plugins/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;!-- END GLOBAL MANDATORY STYLES --&gt;
+   
+   &lt;!-- BEGIN PAGE LEVEL PLUGIN STYLES --&gt; 
+   &lt;link href=&quot;assets/plugins/fancybox/source/jquery.fancybox.css&quot; rel=&quot;stylesheet&quot; /&gt;              
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/revolution_slider/css/rs-style.css&quot; media=&quot;screen&quot;&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/revolution_slider/rs-plugin/css/settings.css&quot; media=&quot;screen&quot;&gt; 
+   &lt;link href=&quot;assets/plugins/bxslider/jquery.bxslider.css&quot; rel=&quot;stylesheet&quot; /&gt;                
+   &lt;!-- END PAGE LEVEL PLUGIN STYLES --&gt;
+
+   &lt;!-- BEGIN THEME STYLES --&gt; 
+   &lt;link href=&quot;assets/css/style-metronic.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;link href=&quot;assets/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;link href=&quot;assets/css/style-responsive.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;link href=&quot;assets/css/themes/blue.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; id=&quot;style_color&quot;/&gt;
+   &lt;!-- END THEME STYLES --&gt;
+
+   &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; /&gt;
+&lt;/head&gt;
+</pre>  
+
+<h3>Header</h3>
+<p>
+Header contains of logo and top menu bar and it used in all pages. HTML code of header container shown below:   
+</p>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;header navbar navbar-default navbar-static-top&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;navbar-header&quot;&gt;
+		&lt;/div&gt;
+		&lt;!-- BEGIN TOP NAVIGATION MENU --&gt;
+		&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+			&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+			&lt;/ul&gt;                           
+		&lt;/div&gt;
+		&lt;!-- BEGIN TOP NAVIGATION MENU --&gt;
+	&lt;/div&gt;
+&lt;/div&gt;       
+</pre>
+
+<h3>Slider</h3>
+<p>
+Revoluton Slider
+</p>
+<pre class="prettyprint linenums">
+    &lt;!-- BEGIN REVOLUTION SLIDER --&gt;
+    &lt;div class=&quot;fullwidthbanner-container slider-main margin-bottom-10&quot;&gt;
+        &lt;div class=&quot;fullwidthabnner&quot;&gt;
+            &lt;div class=&quot;tp-bannertimer tp-bottom&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- END REVOLUTION SLIDER --&gt;
+</pre>
+
+<h3>Content</h3>
+<p>
+Content consists of page title, breadcrumbs and page's main body. HTML code of Content container as shown below:   
+</p>
+<pre class="prettyprint linenums">
+    &lt;!-- BEGIN CONTAINER --&gt;   
+    &lt;div class=&quot;container&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- END CONTAINER --&gt;
+</pre>
+
+<h3>Footer</h3>
+<pre class="prettyprint linenums">
+&lt;!-- BEGIN FOOTER --&gt;
+&lt;div class=&quot;footer&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- END FOOTER --&gt;
+
+&lt;!-- BEGIN COPYRIGHT --&gt;
+&lt;div class=&quot;copyright&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- END COPYRIGHT --&gt;
+</pre>
+
+<h3>End Of Page(Javascripts)</h3>
+<p>Javascript files loaded in the end of page. This will reduce page load time.</p>
+<pre class="prettyprint linenums">
+    &lt;!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) --&gt;
+    &lt;!-- BEGIN CORE PLUGINS --&gt;
+
+    &lt;script src=&quot;assets/plugins/jquery-migrate-1.2.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/plugins/bootstrap/js/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/back-to-top.js&quot;&gt;&lt;/script&gt;    
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/fancybox/source/jquery.fancybox.pack.js&quot;&gt;&lt;/script&gt;    
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/hover-dropdown.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js&quot;&gt;&lt;/script&gt; 
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;assets/plugins/respond.min.js&quot;&gt;&lt;/script&gt;  
+    &lt;![endif]--&gt;   
+    &lt;!-- END CORE PLUGINS --&gt;   
+
+    &lt;script src=&quot;assets/plugins/jquery-1.10.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/bxslider/jquery.bxslider.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/scripts/app.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/scripts/index.js&quot;&gt;&lt;/script&gt;    
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        jQuery(document).ready(function() {
+            App.init();    
+            App.initBxSlider();
+            Index.initRevolutionSlider();                    
+        });
+    &lt;/script&gt;
+	
+    &lt;!-- END JAVASCRIPTS --&gt;
+</pre>
+                      
+<h3>HTML Code Comment Sample</h3>
+<p>All the html, css and javascript file contents have easy to refer and meaningful comments:</p> 
+<pre class="prettyprint linenums">
+&lt;!-- BEGIN LOGO (you can use logo image instead of text)--&gt;
+&lt;a class=&quot;navbar-brand logo-v1&quot; href=&quot;index.html&quot;&gt;
+	&lt;img src=&quot;assets/img/logo_blue.png&quot; id=&quot;logoimg&quot; alt=&quot;&quot;&gt;
+&lt;/a&gt;
+&lt;!-- END LOGO --&gt;
+</pre>
+  
+<h3>CSS Code Comment Sample</h3>
+<pre class="prettyprint linenums">
+/********************
+ GENERAL LAYOUT 
+*********************/
+/***
+Top Bar
+***/
+.front-topbar {
+	padding: 3px 0;
+	background: #eee;
+}
+
+/*Social Icons*/
+.front-topbar .social-icons li {
+	margin-bottom: 0;
+}
+</pre>  
+
+          </section>
+        </div>
+      </div>
+    
+
+        <div class="row">
+          <div class="span12">
+            <section id="font">
+              <div class="page-header">
+                <h1>3. Font</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <p>
+                Metronic uses Open Sans font from google fonts. The font imported in main css file: <code>assets/css/style.css</code>
+              </p>
+
+              <h3>Load Open Sans Font From Local</h3>
+              <pre class="prettyprint linenums">
+/***
+Import fonts
+***/
+@import url(../fonts/font.css);
+              </pre> 
+              <h3>Load Open Sans Font From Remote Google Fonts</h3>
+              <pre class="prettyprint linenums">
+/***
+Import fonts
+***/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+              </pre>
+
+              <h3>Extended Cyrillic Language Support</h3>
+              <pre class="prettyprint linenums">
+/***
+Import fonts
+***/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext);
+              </pre>
+
+              <h3>Extended Greek Language Support</h3>
+              <pre class="prettyprint linenums">
+/***
+Import fonts
+***/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,greek-ext);
+              </pre>
+
+              <h3>Extended Vietnamese Language Support</h3>
+              <pre class="prettyprint linenums">
+/***
+Import fonts
+***/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese);
+              </pre>
+            </section> 
+          </div>  
+        </div>  
+
+
+        <div class="row">
+          <div class="span12">
+            <section id="theme_config">
+              <div class="page-header">
+                <h1>4. Theme & Layout Configuration</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+
+              <h3>Setup Theme</h3>
+              <p>
+                Metronic Frontend comes with 4 color themes, <code>blue</code>, <code>red</code>, <code>green</code>, <code>orange</code>.
+                To setup a selected theme. Include <code>style_[theme_name].css</code> in page head.
+                For instance, if you like to use blue theme, include <code>style_blue.css</code> css file. CSS file load order should be followed as shown below:
+              </p>
+              <pre class="prettyprint linenums">
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Metronic Frotnend | Homepage&lt;/title&gt;
+    &lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;description&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;author&quot; /&gt;
+
+   &lt;!-- BEGIN GLOBAL MANDATORY STYLES --&gt;          
+   &lt;link href=&quot;assets/plugins/font-awesome/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;link href=&quot;assets/plugins/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;!-- END GLOBAL MANDATORY STYLES --&gt;
+   
+   &lt;!-- BEGIN PAGE LEVEL PLUGIN STYLES --&gt; 
+   &lt;link href=&quot;assets/plugins/fancybox/source/jquery.fancybox.css&quot; rel=&quot;stylesheet&quot; /&gt;              
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/revolution_slider/css/rs-style.css&quot; media=&quot;screen&quot;&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/revolution_slider/rs-plugin/css/settings.css&quot; media=&quot;screen&quot;&gt; 
+   &lt;link href=&quot;assets/plugins/bxslider/jquery.bxslider.css&quot; rel=&quot;stylesheet&quot; /&gt;                
+   &lt;!-- END PAGE LEVEL PLUGIN STYLES --&gt;
+
+   &lt;!-- BEGIN THEME STYLES --&gt; 
+   &lt;link href=&quot;assets/css/style-metronic.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;link href=&quot;assets/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   &lt;link href=&quot;assets/css/style-responsive.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+   <div class="label">&lt;link href=&quot;assets/css/themes/blue.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; id=&quot;style_color&quot;/&gt;</div>
+   &lt;!-- END THEME STYLES --&gt;
+
+   &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; /&gt;
+&lt;/head&gt;			  
+              </pre> 
+            </section> 
+          </div>  
+        </div>  
+
+        <div class="row">
+          <div class="span12">
+            <section id="top_menu">
+              <div class="page-header">
+                <h1>5. Header with Top Bar</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <p>
+                Top bar contains of contact info, social links etc.
+              </p>  
+              <img src="assets/i/topbar.jpg" class="img-polaroid">
+            </i>
+              <h3>Top Bar Options</h3>              
+              <pre class="prettyprint linenums">
+&lt;!-- BEGIN TOP BAR --&gt;
+&lt;div class=&quot;front-topbar&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-md-6&quot;&gt;
+				&lt;ul class=&quot;list-unstyle inline&quot;&gt;
+					&lt;li&gt;&lt;i class=&quot;icon-phone topbar-info-icon top-2&quot;&gt;&lt;/i&gt;Call us: &lt;span&gt;(1) 456 6717&lt;/span&gt;&lt;/li&gt;
+					&lt;li class=&quot;sep&quot;&gt;&lt;span&gt;|&lt;/span&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;i class=&quot;icon-envelope-alt topbar-info-icon top-2&quot;&gt;&lt;/i&gt;Email: &lt;span&gt;info@keenthemes.com&lt;/span&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-md-6 topbar-social&quot;&gt;
+				&lt;ul class=&quot;list-unstyled inline&quot;&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;        
+&lt;/div&gt;
+&lt;!-- END TOP BAR --&gt;
+              </pre>              
+            </section> 
+          </div>  
+        </div> 
+		
+		
+        <div class="row">
+          <div class="span12">
+            <section id="main_menu">
+              <div class="page-header">
+                <h1>6. Main Menu</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <p>
+                Top menu enables an easy access to most frequently accessed information and pages.
+              </p>  
+              <img src="assets/i/mainmenu.jpg" class="img-polaroid">
+            </i>
+              <h3>Top Menu Dropdown Options</h3>              
+              <pre class="prettyprint linenums">
+&lt;!-- BEGIN TOP NAVIGATION MENU --&gt;
+&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+	&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+		&lt;li class=&quot;dropdown active&quot;&gt;
+			&lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; data-hover=&quot;dropdown&quot; data-delay=&quot;0&quot; data-close-others=&quot;false&quot; href=&quot;#&quot;&gt;
+				Home
+				&lt;i class=&quot;icon-angle-down&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+			&lt;ul class=&quot;dropdown-menu&quot;&gt;
+				&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;Home Default&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;page_home2.html&quot;&gt;Home with Top Bar&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dropdown&quot;&gt;
+			&lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; data-hover=&quot;dropdown&quot; data-delay=&quot;0&quot; data-close-others=&quot;false&quot; href=&quot;#&quot;&gt;
+				Pages
+				&lt;i class=&quot;icon-angle-down&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+			&lt;ul class=&quot;dropdown-menu&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;page_about.html&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;page_services.html&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;page_prices.html&quot;&gt;Prices&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;page_contacts.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dropdown&quot;&gt;
+			&lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; data-hover=&quot;dropdown&quot; data-delay=&quot;0&quot; data-close-others=&quot;false&quot; href=&quot;#&quot;&gt;
+				Features
+				&lt;i class=&quot;icon-angle-down&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+			&lt;ul class=&quot;dropdown-menu&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;feature_typography.html&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;feature_buttons.html&quot;&gt;Buttons&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;feature_forms.html&quot;&gt;Forms&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;feature_icons.html&quot;&gt;Icons&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;                        
+		&lt;li class=&quot;dropdown&quot;&gt;
+			&lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; data-hover=&quot;dropdown&quot; data-delay=&quot;0&quot; data-close-others=&quot;false&quot; href=&quot;#&quot;&gt;
+				Portfolio
+				&lt;i class=&quot;icon-angle-down&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+			&lt;ul class=&quot;dropdown-menu&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;portfolio_4.html&quot;&gt;Portfolio 4&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;portfolio_3.html&quot;&gt;Portfolio 3&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;portfolio_2.html&quot;&gt;Portfolio 2&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;portfolio_item.html&quot;&gt;Portfolio Item&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dropdown&quot;&gt;
+			&lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; data-hover=&quot;dropdown&quot; data-delay=&quot;0&quot; data-close-others=&quot;false&quot; href=&quot;#&quot;&gt;
+				Blog
+				&lt;i class=&quot;icon-angle-down&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+			&lt;ul class=&quot;dropdown-menu&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;blog.html&quot;&gt;Blog Page&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;blog_item.html&quot;&gt;Blog Item&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;http://www.keenthemes.com/preview/index.php?theme=metronic_admin&amp;page=index.html&quot; target=&quot;_blank&quot;&gt;Admin Theme&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;menu-search&quot;&gt;
+			&lt;span class=&quot;sep&quot;&gt;&lt;/span&gt;
+			&lt;i class=&quot;icon-search search-btn&quot;&gt;&lt;/i&gt;
+
+			&lt;div class=&quot;search-box&quot;&gt;
+				&lt;div class=&quot;input-group&quot;&gt;
+					&lt;form&gt;
+						&lt;input style=&quot;background:#fff;&quot; class=&quot;input-sm m-wrap form-control&quot; type=&quot;text&quot; placeholder=&quot;Search&quot; /&gt;
+						&lt;button type=&quot;submit&quot; class=&quot;btn theme-btn&quot;&gt;Go&lt;/button&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt; 
+		&lt;/li&gt;
+	&lt;/ul&gt;                           
+&lt;/div&gt;
+&lt;!-- BEGIN TOP NAVIGATION MENU --&gt;
+              </pre>              
+            </section> 
+          </div>  
+        </div> 
+		
+  
+        <div class="row">
+          <div class="span12">
+            <section id="buttons">
+              <div class="page-header">
+                <h1>7. Buttons</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <p>
+                Button styles can be applied to any element with the .btn class applied. 
+                Basically, you'll want to apply these to only  
+                <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code> elements.
+              </p> 
+              <img src="assets/i/buttons.jpg" class="img-polaroid">
+              <p></p>
+              <table class="table table-bordered table-striped" width="600">
+                  <thead>
+                    <tr>
+                      <th>class=""</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>&lt;button type=&quot;button&quot; class=&quot;btn default&quot;&gt;Default button&lt;/button&gt;</code></td>
+                      <td>Default button</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;button type=&quot;button&quot; class=&quot;btn blue&quot;&gt;Blue button&lt;/button&gt;</code></td>
+                      <td>Blue button</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;button type=&quot;button&quot; class=&quot;btn red&quot;&gt;Red button&lt;/button&gt;</code></td>
+                      <td>Red button</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;button type=&quot;button&quot; class=&quot;btn green&quot;&gt;Green button&lt;/button&gt;</code></td>
+                      <td>Green button</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;button type=&quot;button&quot; class=&quot;btn purple&quot;&gt;Purple button&lt;/button&gt;</code></td>
+                      <td>Purple button</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;button type=&quot;button&quot; class=&quot;btn yellow&quot;&gt;Yellow button&lt;/button&gt;</code></td>
+                      <td>Yellow button</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section> 
+          </div>  
+        </div> 
+
+
+         <div class="row">
+          <div class="span12">
+              <section id="init">
+              <div class="page-header">
+                <h1>8. Javascript Initialization</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <p>
+                Core javascript initialization implemented in <code>assets/scripts/app.js</code> thorugh App object as shown below.
+                This approach enables an easy modular implementation to initialize jquery plugins and other application logics.
+              </p> 
+<pre class="prettyprint linenums">
+var App = function () {
+
+    var localVariable; //local variable
+
+    var sampleFunction = function() {
+       //sample function code
+    }
+
+    return {
+
+        //main method to initiate template pages
+        init: function () {           
+            sampleFunction() // call local function
+        },
+
+        //sample method declaration
+        sampleMethod: function (test) 
+        {
+          alert(test);
+      }
+
+    };
+
+}();
+</pre>
+
+	<h3>Core Handler Functions defined in <code>assets/scripts/app.js</code></h3>
+		<p>Below will be listed all handler functons implemented in App object:</p>  
+  
+		<h3>handleIEFixes</h3>
+		<p>Fix html5 placeholder attribute for ie7 & ie8.</p> 
+
+		<h3>handleBootstrap</h3>
+		<p>Bootstrap plugins initialization.</p> 
+
+		<h3>handleMisc</h3>
+		<p>Handle Scroller</p> 
+
+		<h3>handleSearch</h3>
+		<p>Show/hide ssearchbar</p> 
+
+		<h3>handleTheme</h3>
+		<p>Set Theme Color</p> 
+ 
+              </section> 
+          </div>  
+        </div>    
+
+		
+        <div class="row">
+          <div class="span12">
+              <section id="extend">
+                <div class="page-header">
+                  <h1>9. Coding & Extending</h1>
+                  <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                </div>
+                <h3>
+                  CSS
+                </h3>
+                <p>
+                To overide the theme CSS styles you can use <code>assets/css/custom.css</code> for your own customization. This will make the future updates easier if you keep your own CSS code seperate.
+                </p>
+              </section>
+          </div>
+        </div>
+		
+		
+        <div class="row">
+          <div class="span12">
+				<section id="plugins">
+					<div class="page-header">
+						<h1>10. Javascript Plugins & Resources</h1>
+						<a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+					</div>
+					<h3>
+						Select Plugin Or Resource:
+					</h3>
+					<select id="pluginslist" onchange="ShowPlugin();">
+						<option value="bootstrap">Bootstrap</option>
+						<option value="bxslider">Bxslider</option>
+						<option value="fancybox">Fancybox</option>
+						<option value="fontawesome">Font Awesome</option>
+						<option value="gmaps">Gmaps</option>
+						<option value="revslider">Revolution Slider</option>
+						<option value="uniform">Uniform</option>
+						<option value="opensans">Open Sans</option>
+					</select>					
+					<script>
+						function ShowPlugin(){
+							var id = $('#pluginslist').val();
+							$('.pluginwrap').hide();
+							$('#' + id).show();
+							return;
+						}
+					</script>  
+
+					<div id="bootstrap" class="pluginwrap pluginwrapActive">
+						<h3>Bootstrap</h3>
+						<p>
+							Metronic Frontennd based on Twitter Bootstrap
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;link href=&quot;assets/plugins/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+						</pre>
+						<h4>JS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;script src=&quot;assets/plugins/bootstrap/js/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+						</pre>
+						<h4>Official Documentation</h4>
+						<a href="http://getbootstrap.com" target="_blank">http://getbootstrap.com</a>
+					</div>
+
+					<div id="bxslider" class="pluginwrap">
+						<h3>Bxslider</h3>
+						<p>
+							Fully loaded, responsive content slider
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;link href=&quot;assets/plugins/bxslider/jquery.bxslider.css&quot; rel=&quot;stylesheet&quot; /&gt;							
+						</pre>
+						<h4>JS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/bxslider/jquery.bxslider.js&quot;&gt;&lt;/script&gt;						
+						</pre>
+						<h4>Official Documentation</h4>
+						<a href="http://bxslider.com" target="_blank">http://bxslider.com</a>
+					</div>
+					
+					<div id="fancybox" class="pluginwrap">
+						<h3>Fancybox</h3>
+						<p>
+							FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;link href=&quot;assets/plugins/fancybox/source/jquery.fancybox.css&quot; rel=&quot;stylesheet&quot; /&gt;            
+						</pre>
+						<h4>JS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/fancybox/source/jquery.fancybox.pack.js&quot;&gt;&lt;/script&gt;
+						</pre>
+						<h4>Official Documentation</h4>
+						<a href="http://www.fancyapps.com/fancybox/" target="_blank">http://www.fancyapps.com/fancybox/</a>
+					</div>
+					
+					<div id="fontawesome" class="pluginwrap">
+						<h3>Font Awesome 3.2.1</h3>
+						<p>
+							The iconic font designed for use with Twitter Bootstrap
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;link href=&quot;assets/plugins/font-awesome/css/font-awesome.css&quot; rel=&quot;stylesheet&quot; /&gt;</pre>
+						<h4>Official Documentation</h4>
+						<a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">http://fortawesome.github.com/Font-Awesome/</a>
+					</div>
+					
+					<div id="gmaps" class="pluginwrap">
+						<h3>Font Awesome 3.2.1</h3>
+						<p>
+							GMaps.js allows you to use the potential of Google Maps in a simple way. No more extensive documentation or large amount of code.
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+No CSS file
+						</pre>
+						<h4>JS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;script src=&quot;assets/plugins/gmaps/gmaps.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+						</pre>
+						<h4>Official Documentation</h4>
+						<a href="http://hpneo.github.com/gmaps/" target="_blank">http://hpneo.github.com/gmaps/</a>
+					</div>
+
+					<div id="revslider" class="pluginwrap">
+						<h3>Revolution Slider</h3>
+						<p>
+							Turn simple HTML markup into a responsive or fullwidth slider with must-see-effects and meanwhile keep or build your SEO optimization.
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/revolution_slider/css/rs-style.css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/revolution_slider/rs-plugin/css/settings.css&quot; media=&quot;screen&quot;&gt;              
+						</pre>
+						<h4>JS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js&quot;&gt;&lt;/script&gt; 
+						</pre>
+						<h4>Official Documentation</h4>
+						<p>
+							Please kindly find documentation for Revolution Slider in downloaded pack
+						</p>
+					</div>
+					
+					<div id="uniform" class="pluginwrap">
+						<h3>Uniform</h3>
+						<p>
+							Minimalistic form elements with jQuery
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;link href=&quot;assets/plugins/uniform/css/uniform.default.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;  
+						</pre>
+						<h4>JS Files</h4>
+						<pre class="prettyprint linenums">
+&lt;link href=&quot;assets/plugins/uniform/css/uniform.default.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;   
+						</pre>
+						<h4>Official Documentation</h4>
+						<p>
+							<a href="http://uniformjs.com/" target="_blank">http://uniformjs.com/</a>
+						</p>
+					</div>
+					
+					<div id="opensans" class="pluginwrap">
+						<h3>Open Sans</h3>
+						<p>
+							Metornic uses Open Sans web font from google fonts: http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700
+						</p>
+						<h4>CSS Files</h4>
+						<pre class="prettyprint linenums">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+						</pre>
+						<h4>Official Documentation</h4>
+						<a href="http://www.google.com/webfonts" target="_blank">http://www.google.com/webfonts</a>
+					</div>
+					
+				</section> 
+          </div>  
+        </div>    
+
+        <div class="row">
+          <div class="span12">
+              <section id="references">
+              <div class="page-header">
+                <h1>11. References</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <p>
+                Below is the list of all plugins and external resources used to power this template.
+              </p> 
+              <table class="table table-bordered table-striped" width="600">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>URL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>jQuery 1.10.2</td>
+                      <td>Core Javascript library</td>
+                      <td><a href="http://www.jquery.com" target="_blank">http://www.jquery.com</a></td>
+                    </tr>
+                    <tr>
+                      <td>Twitter Bootstrap v3.0</td>
+                      <td>Sleek, intuitive, and powerful front-end framework for faster and easier web development</td>
+                      <td><a href="http://getbootstrap.com" target="_blank">http://getbootstrap.com</a></td>
+                    </tr>
+                    <tr>
+                      <td>Bxslider</td>
+                      <td>Fully loaded, responsive content slider</td>
+                      <td><a href="http://bxslider.com" target="_blank">http://bxslider.com</a></td>
+                    </tr>
+                    <tr>
+                      <td>FancyBox</td>
+                      <td>FancyBox is a tool for displaying images, html content and multi-media</td>
+                      <td><a href="http://fancybox.net/" target="_blank">http://fancybox.net/</a></td>
+                    </tr>
+                    <tr>
+                      <td>gmaps.js</td>
+                      <td>gmaps.js allows you to use the potential of Google Maps in a simple way.
+                          No more extensive documentation or large amount of code
+                      </td>
+                      <td><a href="http://hpneo.github.com/gmaps/" target="_blank">http://hpneo.github.com/gmaps/</a></td>
+                    </tr>
+                     <tr>
+                      <td>Revolution Slider</td>
+                      <td>Turn simple HTML markup into a responsive or fullwidth slider with must-see-effects and meanwhile keep or build your SEO optimization.</td>
+                      <td><a href="http://uniformjs.com/" target="_blank">http://uniformjs.com/</a></td>
+                    </tr>
+                     <tr>
+                      <td>Uniform</td>
+                      <td>Uniform masks your standard form controls with custom themed controls. It works in sync with your real form elements to ensure accessibility and compatibility</td>
+                      <td><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848?WT.ac=item_more_thumb&WT.seg_1=item_more_thumb&WT.z_author=themepunch" target="_blank">Revolution Slider on CodeCanyon</a></td>
+                    </tr>
+                    <tr>
+                      <td>Font Awesome</td>
+                      <td>The iconic font designed for use with Twitter Bootstrap</td>
+                      <td><a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">http://fortawesome.github.com/Font-Awesome/</a></td>
+                    </tr>
+                    <tr>
+                      <td>Open Sans</td>
+                      <td>
+                        Metornic Frontend uses Open Sans web font from google fonts:
+                        http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700</td>
+                      <td><a href="http://www.google.com/webfonts" target="_blank">http://www.google.com/webfonts</a></td>
+                    </tr>
+                  </tbody>
+               </table>     
+              </section> 
+          </div>  
+        </div>    
+
+        <div class="row">
+          <div class="span12">
+              <section id="log">
+                <div class="page-header">
+                    <h1>12. Change Log</h1>
+                    <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                </div>
+
+                <h4>Version 2.0.2 – 20 February 2014(Both LTR and RTL versions)</h4>
+                <ul>        
+                    <li>
+                       No Changes Made
+                    </li>
+                </ul>
+                <br>
+
+                <h4>Version 2.0.1 - 19 February 2014(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        NEW: Mega Menu For Horizontal Menu
+                         <ul>  
+                          <li>Modified css file: <code>assets/css/style.css</code></li>
+                          <li>Modified css file: <code>assets/css/style-responsive.css</code></li>
+                          <li>Modified html files: <code>all html files</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPGRADE: Latest Bootstrap 3.1.1
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/bootstrap/</code></li>
+                        </ul>
+                    </li>
+                     <li>
+                        FIX: Missing Icons in Fontawesome 4.0.3 & Glypicons Examples
+                        <ul>  
+                          <li>Modified html file: <code>feature_icons.html</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        DROPPED: Metronic v1.4 version has been dropped from the package.
+                    </li> 
+				</ul>
+				<br>
+				
+                <h4>Version 2.0 - 12 February 2014(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        NEW: Added social icons
+                    </li>
+                    <li>
+                        UPDATE: Bootstrap 3.1.0
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/bootstrap/</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Revolution Slider 4.1.4
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/revolution_slider/</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Font Awesome 4.0.3
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/revolution_slider/</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIX: Safari RTL issue
+                    </li>
+				</ul>
+				<br>
+				
+                <h4>Version 1.5.5 - 10 December 2013(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        NEW: 10 frontend theme PSD files
+                         <ul>  
+                          <li>Index</li>
+                          <li>About us</li>
+                          <li>Blog</li>
+                          <li>Blog item</li>
+                          <li>Careers</li>
+                          <li>Contact</li>
+                          <li>FAQ</li>
+                          <li>Login</li>
+                          <li>Prices</li>
+                          <li>Services</li>
+                          <li>Modified folders: <code>frontend/resources/theme_psd</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Bootstrap 3.0.3
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/bootstrap/</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIXED: Class typo error on frontend theme
+                         <ul>  
+                          <li>Modified css files: <code>assets/css/style-metronic.css</code></li>
+                        </ul>
+                    </li>
+				</ul>
+				<br>
+				
+                <h4>Version 1.5.4 - 21 November 2013(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        NEW: Header Fixed Page
+                         <ul>  
+                          <li>Added html file: <code>page_home_fixed_header.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Bootstrap 3.0.2
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/bootstrap/</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIXED: Typo in style.css on line 2376
+                         <ul>  
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIXED: FAQ page wrong tab active
+                         <ul>  
+                          <li>Modified css files: <code>page_faq.html</code></li>
+                        </ul>
+                    </li>
+				</ul>
+				<br>
+
+                <h4>Version 1.5.3 - 8 November 2013(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        NEW: Login Page
+                         <ul>  
+                          <li>Added html file: <code>page_login.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: Signup Page
+                         <ul>  
+                          <li>Added html file: <code>page_signup.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: Careers Page
+                         <ul>  
+                          <li>Added html file: <code>page_careers.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: Added categories block in Blog
+                         <ul>  
+                          <li>Modified html files: <code>blog.html</code></li>
+                          <li>Modified html files: <code>blog_item.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: Added Login & Signup links on topbar in page_home2.html 
+                         <ul>  
+                          <li>Modified html files: <code>page_home2.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Some styles are separeted into page level css
+                         <ul>  
+                          <li>Added css file: <code>assets/css/gallery.css</code></li>
+                          <li>Added css file: <code>assets/css/page404.css</code></li>
+                          <li>Added css file: <code>assets/css/page500.css</code></li>
+                          <li>Added css file: <code>assets/css/search-page-results.css</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Font Awesome plugin updated
+                         <ul>  
+                          <li>Modified html files: <code>feature_icons.html</code></li>
+                          <li>Other files that contain some font awesome icons</li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIXED: Portfolio bug fixed
+                         <ul>  
+                          <li>Modified html files: <code>portfolio_2.html</code></li>
+                          <li>Modified html files: <code>portfolio_3.html</code></li>
+                          <li>Modified html files: <code>portfolio_4.html</code></li>
+                          <li>Modified html files: <code>portfolio_item.html</code></li>
+                        </ul>
+                    </li>
+				</ul>
+				<br>
+				
+                <h4>Version 1.5.2 – 21 October 2013(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        No Changes                    
+                    </li>
+                </ul>
+                <br>
+
+                <h4>Version 1.5.1 - 18 October 2013(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        NEW: FAQ Page
+                         <ul>  
+                          <li>Added html file: <code>page_faq.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: Gallery
+                         <ul>  
+                          <li>Added html file: <code>page_gallery.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: Search Results
+                         <ul>  
+                          <li>Added html file: <code>page_search_result.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: 404 Error Page
+                         <ul>  
+                          <li>Added html file: <code>page_404.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: 500 Error Page
+                         <ul>  
+                          <li>Added html file: <code>page_500.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIXED: Social Icons on Contacts page
+                         <ul>  
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIXED: Portfolio Item Issue When Window Resized on Firefox
+                         <ul>  
+                          <li>Updated plugin javascript file: <code>assets/plugins/jquery.mixitup.min.js</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FIXED: Fixed Recent Works and Clients Sliders Issue on Mac Safari
+                         <ul>  
+                          <li>Updated plugin folder: <code>assets/plugins/bxslider/</code></li>
+                        </ul>
+                    </li>
+                </ul>
+				
+                <h4>Version 1.5 - 7 October 2013(Both LTR and RTL versions)</h4>
+                <ul>
+                    <li>
+                        NEW: Bootstrap 3.0 Support
+                         <ul>  
+                          <li>Modified html files: <code>all html files</code></li>
+                          <li>Modified css files: <code>all css files</code></li>
+                          <li>Modified js files: <code>all js files</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        NEW: Fixed Header
+                         <ul>  
+                          <li>Modified html files: <code>all html files</code></li>
+                          <li>Modified css files: <code>assets/css/style.css, assets/css/responsive.css</code></li>
+                          <li>Modified js files: <code>assets/scripts/app.js</code></li>
+						 </ul>
+                    </li>
+                    <li>
+                        NEW: New Slide Added into the Homepage's Revolution Slider
+                         <ul>  
+                          <li>Modified html files: <code>page_home2.html</code></li>
+                          <li>Modified css files: <code>assets/css/style.css</code></li>
+						 </ul>
+                    </li>
+                    <li>
+                        FIXED: Bxslider image load issue fixed
+                    </li>
+                    <li>
+                        UPDATE: Latest jQuery v1.10.2
+                         <ul>  
+                          <li>Updated file: <code>assets/plugins/jquery-1.10.2.min.js</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Latest Font Awesome v3.2.1
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/font-awesome</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        UPDATE: Latest BxSlider v4.1.1
+                         <ul>  
+                          <li>Updated folder: <code>assets/plugins/bxslider</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        ENHANCEMENT: Global Code Enhancement with Bootstrap 3.0 Support
+                         <ul>  
+                          <li>Modified html files: <code>all html files</code></li>
+                          <li>Modified css file: <code>all css files</code></li>
+                          <li>Modified javascript file: <code>all js files</code></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Version 1.0 – 13 February 2013</h4>
+                <ul>
+                    <li>Initial release</li>
+                </ul>
+              </section> 
+          </div>  
+        </div>    
+
+         <div class="row">
+          <div class="span12">
+              <section id="upgrade">
+              <div class="page-header">
+                <h1>13. Upgrade</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <h4>Upgrade From v1.5.x To v2.x</h4>              
+              <p>
+                Just replace the assets folder with the latest one(merge back your own changes if you have done any) and update html codes of header, footer & sidebar.
+              </p>
+              <h4>Upgrade From v1.4.x To v2.x</h4>              
+              <p>
+                Since v1.5.x came with Bootstrap 3.0 support, we have changed and edited the entire theme and updated most of the 3rd party plugins and resources. 
+                The best practice for 2.x to 3.0 migration will be, to update your page header, top bar menu, sidebar menu and footer part first. Then proceed with content and UI components.
+              </p> 
+              <p>
+                 <h3>Major Metronic Class Changes</h3>
+                <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Older Versions</th>
+                    <th>Metronic 1.5</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>.m-wrap</code></td>
+                    <td><code>.form-control</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn</code></td>
+                    <td><code>.btn .default</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.xsmall</code></td>
+                    <td><code>.input-xsmall</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.small</code></td>
+                    <td><code>.input-small</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.medium</code></td>
+                    <td><code>.input-medium</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.large</code></td>
+                    <td><code>.input-large</code></td>
+                  </tr>
+                </tbody>
+                </table>
+
+                <h3>Major Bootstrap Class Changes</h3>
+                <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Bootstrap 2.x</th>
+                    <th>Bootstrap 3.0</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>.container-fluid</code></td>
+                    <td><code>.container</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.row-fluid</code></td>
+                    <td><code>.row</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.span*</code></td>
+                    <td><code>.col-md-*</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.offset*</code></td>
+                    <td><code>.col-md-offset-*</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.brand</code></td>
+                    <td><code>.navbar-brand</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.nav-collapse</code></td>
+                    <td><code>.navbar-collapse</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.nav-toggle</code></td>
+                    <td><code>.navbar-toggle</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-navbar</code></td>
+                    <td><code>.navbar-btn</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.hero-unit</code></td>
+                    <td><code>.jumbotron</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.icon-*</code></td>
+                    <td><code>.glyphicon .glyphicon-*</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn</code></td>
+                    <td><code>.btn .btn-default</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-mini</code></td>
+                    <td><code>.btn-xs</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-small</code></td>
+                    <td><code>.btn-sm</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.btn-large</code></td>
+                    <td><code>.btn-lg</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.visible-phone</code></td>
+                    <td><code>.visible-sm</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.visible-tablet</code></td>
+                    <td><code>.visible-md</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.visible-desktop</code></td>
+                    <td><code>.visible-lg</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.hidden-phone</code></td>
+                    <td><code>.hidden-sm</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.hidden-tablet</code></td>
+                    <td><code>.hidden-md</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.hidden-desktop</code></td>
+                    <td><code>.hidden-lg</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.input-small</code></td>
+                    <td><code>.input-sm</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.input-large</code></td>
+                    <td><code>.input-lg</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.checkbox.inline</code> <code>.radio.inline</code></td>
+                    <td><code>.checkbox-inline</code> <code>.radio-inline</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.input-prepend</code> <code>.input-append</code></td>
+                    <td><code>.input-group</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.add-on</code></td>
+                    <td><code>.input-group-addon</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>.thumbnail</code></td>
+                    <td><code>.img-thumbnail</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>ul.unstyled</code></td>
+                    <td><code>.list-unstyled</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>ul.inline</code></td>
+                    <td><code>.list-inline</code></td>
+                  </tr>
+                </tbody>
+              </table>
+               </p>
+              <p>
+                              Please check out <a href="http://getbootstrap.com/getting-started/#migration">http://getbootstrap.com/getting-started/#migration</a> to learn more about Bootstrap 2.x to 3.0 migration.
+              </p>
+              <p>
+                 Please do not forget to backup your files before the upgrade. If you encountered any problem during the upgrade please contact our support at <a href="mailto:support@keenthemes.com">support@keenthemes.com</a>
+              </p>
+              </section> 
+          </div>  
+        </div>  
+		
+        <div class="row">
+          <div class="span12">
+              <section id="end">
+              <div class="page-header">
+                <h1>14. End Of Documentation</h1>
+                 <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+              </div>
+              <p>
+                Once again, thanks for purchasing Metronic. We hope you will enjoy using it for your next project.
+              </p> 
+              </section> 
+          </div>  
+        </div>    
+
+	</div>
+    <!-- END -->
+    <footer class="footer">
+      <div class="container container-narrow">
+        <p>Metronic - Admin + Frotnend Template. Designed and built with love by <a href="http://www.keenthemes.com" target="_blank">keenthemes</a> 
+      </div>
+    </footer>
+
+    <!-- Le javascript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>
